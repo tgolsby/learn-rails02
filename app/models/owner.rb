@@ -10,7 +10,7 @@ class Owner
 
 	def countdown
 		today = Date.today
-		birthday = Date.new(today.year, birthdate.month, birthdate.day)
+		birthday = Date.new(today.year, birthdate.month, birthdate.day, birthdate.hours, birthdate.minutes)
 		if birthday > today
 			countdown = (birthday - today).to_i
 		else
