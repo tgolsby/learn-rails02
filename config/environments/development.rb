@@ -33,8 +33,8 @@ LearnRails02::Application.configure do
   domain: ENV["DOMAIN_NAME"],
   authentication: "plain",
   enable_starttls_auto: true,
-  user_name: ENV["tgolsby"],
-  password: ENV["1Animate"]
+  user_name: ENV["GMAIL_USERNAME"],
+  password: ENV["GMAIL_PASSWORD"]
 }
 
 # Send email in development mode.
